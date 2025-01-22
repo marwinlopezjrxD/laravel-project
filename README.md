@@ -2,9 +2,9 @@
 
 ## ---------------------------------------------------------------------------------
 
-## Will continue this project next week (Jan 29, 2025 onwards or more)
+## Jebaited
 
-## Will learn HTML and  watch CS50 next week or more
+## (https://pastebin.com/jV0dKFH8)
 
 ## ---------------------------------------------------------------------------------
 
