@@ -15,4 +15,4 @@
 
 ## How to Upload Laravel Project to GitHub
 
-## Credits: (https://www.youtube.com/@WebTechKnowledge)
+## Credits: https://www.youtube.com/@WebTechKnowledge
