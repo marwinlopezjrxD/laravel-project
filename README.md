@@ -2,11 +2,11 @@
 
 ## ---------------------------------------------------------------------------------
 
-## Will continue this project next week (Jan 28, 2025 onwards)
+## Will continue this project next week (Jan 29, 2025 onwards or more)
 
 ## Will watch CS50 next week
 
-## Will learn HTML through freeCodeCamp next week
+## Will learn HTML through freeCodeCamp next week or more
 
 ## ---------------------------------------------------------------------------------
 
