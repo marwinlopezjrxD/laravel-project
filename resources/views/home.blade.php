@@ -6,6 +6,6 @@
     <title>Laravel 11 Practice</title>
 </head>
 <body style="background-color: black;">
-    <h1 style="color: white;'">Welcome Page</h1>
+    <h1 style="color: white;'">Home Page</h1>
 </body>
 </html>
