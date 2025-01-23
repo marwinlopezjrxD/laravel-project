@@ -6,25 +6,39 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/test', function () {
+    return view('home');
+});
 
-//redirect one route to another route
+Route::view('/home', 'home');
+Route::redirect('/home', '/');
+
+Route::get('/about/{name}', function ($name) {
+    echo $name; 
+    return view('about',["name"=>$name]);
+});
 
 
 
+//redirect one url to another url
+//Redirect with roung
+//redirect one route to another route 
+//if anyone want to visit the homepage, you will automatically
+//direct user to the main page
+//*first url whatever page you want to redirect
+//and *second parameter where you want to redirect
+//*second parameter(root page or the main page)
+//*first url, *second parameter
 
-
-
-
-
-
-
-// //for routing 
-// //anchor tag
+// Route::get('/', function () {
+//     return view('welcome');
+// });
 // Route::get('/test', function () {
 //     return view('home');
 // });
 
 // Route::view('/home', 'home');
+// Route::redirect('/home', '/');
 
 // Route::get('/about/{name}', function ($name) {
 //     echo $name; 
