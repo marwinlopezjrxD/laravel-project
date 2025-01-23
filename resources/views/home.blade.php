@@ -1,11 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Laravel 11 Practice</title>
-</head>
-<body style="background-color: black;">
-    <h1 style="color: white;'">Home Page</h1>
-</body>
-</html>
+<!-- anchor tag -->
+ <h1>Home Page</h1>
+<a href="/about/ming">About Ming</a>
+<a href="/about/lopez">About Lopez</a>
+<a href="/">Welcome Page</a>
