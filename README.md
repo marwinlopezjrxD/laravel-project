@@ -2,7 +2,7 @@
 
 ## ---------------------------------------------------------------------------------
 
-## Continue later
+## Continue next week or more
 
 ## (https://pastebin.com/jV0dKFH8)
 
