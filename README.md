@@ -2,6 +2,10 @@
 
 # Will resume learning later at noon or night
 
+# Need to finish till database and migrations
+# So that I can now start my first project 
+
+
 ## ---------------------------------------------------------------------------------
 
 # laravel-project
@@ -12,3 +16,5 @@
 ## How to Upload Laravel Project to GitHub
 
 ## Credits: https://www.youtube.com/@WebTechKnowledge
+
+## bUrself
