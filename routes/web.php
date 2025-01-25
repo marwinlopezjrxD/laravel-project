@@ -21,7 +21,7 @@ Route::get('/about/{name}', function ($name) {
 
 
 //redirect one url to another url
-//Redirect with roung
+//Redirect route
 //redirect one route to another route 
 //if anyone want to visit the homepage, you will automatically
 //direct user to the main page
