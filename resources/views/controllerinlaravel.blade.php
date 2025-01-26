@@ -14,7 +14,17 @@
 What is Controller?
 
 The Controller comes under MVC architecture.
-The Controller handles requests from user
+
+-> C denotes to the "Controller". 
+
+The Controller handles requests from user and perform
+operations according to that
+
+Refer to the Model View Controller Architecture Image:
+
+----------https://imgur.com/a/nrjQhOL-------------
+
+
 - Display View(function on buttons i believe, and more).
 - Handle Database(fetch, get, data, more like a CRUD. Creating,
 Updating, and Deleting Data)
