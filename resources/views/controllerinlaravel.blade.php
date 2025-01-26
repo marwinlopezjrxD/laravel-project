@@ -11,5 +11,20 @@
  -->
 
 <!-- 
+What is Controller?
+
+The Controller comes under MVC architecture.
+The Controller handles requests from user
+- Display View(function on buttons i believe, and more).
+- Handle Database(fetch, get, data, more like a CRUD. Creating,
+Updating, and Deleting Data)
+
+-->
+
+<!-- 
+In Database, One must have a Recycle Bin
+
+If you as a Developer wants to delete a Data, Make sure it is stored
+in a Trash Bin, If you want to restore that data again.
 
 -->
