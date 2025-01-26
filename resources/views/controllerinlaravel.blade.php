@@ -1,5 +1,5 @@
 <!--            REFER TO THE IMAGE BELOW                -->
-<!-- ----------https://imgur.com/a/nrjQhOL------------- -->
+<!--           https://imgur.com/a/nrjQhOL              -->
 
 <!-- E-Notebook if I'm too lazy to write on paper -->
 
