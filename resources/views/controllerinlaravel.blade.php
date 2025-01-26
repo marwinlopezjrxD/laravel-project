@@ -1,3 +1,6 @@
+<!--            REFER TO THE IMAGE BELOW                -->
+<!-- ----------https://imgur.com/a/nrjQhOL------------- -->
+
 <!-- E-Notebook if I'm too lazy to write on paper -->
 
 <!--
@@ -22,7 +25,7 @@ operations according to that
 
 Refer to the Model View Controller Architecture Image:
 
-----------https://imgur.com/a/nrjQhOL-------------
+
 
 
 - Display View(function on buttons i believe, and more).
