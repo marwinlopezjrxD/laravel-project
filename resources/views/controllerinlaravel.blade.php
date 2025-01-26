@@ -35,6 +35,7 @@ Updating, and Deleting Data)
 In Database, One must have a Recycle Bin
 
 If you as a Developer wants to delete a Data, Make sure it is stored
-in a Trash Bin, If you want to restore that data again.
+in a Trash Bin, If you want to restore that data again or delete
+or DELETE IT COMPLETELY.
 
 -->
