@@ -1,6 +1,6 @@
 # Laravel 11 Practice
 
-# I will do this as long as I can, I just need to play ball and play video games!!!!
+# I'll finish this in Q1 of 2025.
 
 
 ## ---------------------------------------------------------------------------------
@@ -14,4 +14,4 @@
 
 ## Credits: https://www.youtube.com/@WebTechKnowledge
 
-## bUrself
+## be your best self.
