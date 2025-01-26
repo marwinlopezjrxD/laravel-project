@@ -1,9 +1,6 @@
 # Laravel 11 Practice
 
-# Will resume learning later at noon or night
-
-# Need to finish till database and migrations
-# So that I can now start my first project 
+# I will do this as long as I can, I just need to play ball and play video games!!!!
 
 
 ## ---------------------------------------------------------------------------------
