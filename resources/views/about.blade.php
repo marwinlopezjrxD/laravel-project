@@ -11,5 +11,5 @@ to view(about.blade.php)
 
 -->
 <!-- passing of data -->
-<h1>{{$name}}</h1>
+<!-- <h1>{{$name}}</h1> -->
 
