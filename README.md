@@ -1,7 +1,11 @@
 # Laravel 11 Practice
 
-# I'll finish this in Q1 of 2025.
+# I'll finish this in Q1 of 2025.(mema)
 
+## ---------------------------------------------------------------------------------
+
+# 8:46 Laravel 11 tutorial #8 Routing in Laravel
+# https://youtu.be/_rLUCUjVcnM?list=PL8p2I9GklV46KYQnt-xJB9dhyG-e-zHnI&t=526
 
 ## ---------------------------------------------------------------------------------
 
