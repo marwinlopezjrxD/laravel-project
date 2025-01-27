@@ -11,8 +11,9 @@ Route::get('/test', function () {
 
 Route::view('/home', 'home');
 
-Route::get('/about', function () {
-    return view('about');
+Route::get('/about/{name}', function ($name) {
+    echo $name;
+    return view('about', ["name"=>$name]);
 });
 
 
