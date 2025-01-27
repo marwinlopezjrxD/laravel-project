@@ -14,7 +14,7 @@ to view(about.blade.php)
 -->
 
 <!-- passing of data -->
-<!-- <h1>(KEY)dollarsignname(KEY)</h1> -->
+<!-- <h1>(DOUBLE CURLY BRACES)dollarsignname(DOUBLE CURLY BRACES)</h1> -->
 
 <!-- donot put double curly braces or passing of keys in a comment tag -->
 <!-- i do not know why, it has internal error -->
