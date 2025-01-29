@@ -1,4 +1,4 @@
-# laravel-project
+# Laravel 11 Project Practice
 
 ## https://www.youtube.com/watch?v=qQsar8Ue8NY&list=PL8p2I9GklV46KYQnt-xJB9dhyG-e-zHnI&index=10
 
