@@ -11,6 +11,11 @@ Route::get('/test', function () {
 
 Route::view('/home', 'home');
 
+//on "Route::redirect"
+//first url or first parameter("/firsturl") whatever page you want to redirect
+//second url or second url("secondurl") where you want to redirect
+Route::redirect('/home','/');
+
 Route::get('/about/{name}', function ($name) {
     echo $name;
     return view('about', ["name"=>$name]);
