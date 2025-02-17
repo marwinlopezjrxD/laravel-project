@@ -26,7 +26,7 @@ Route::get('/about/{name}', function ($name) {
 
 //redirect one url to another url
 //Redirect route
-//redirect one route to another route 
+//redirect one route to another route
 //if anyone want to visit the homepage, you will automatically
 //direct user to the main page
 //*first url whatever page you want to redirect
@@ -45,7 +45,7 @@ Route::get('/about/{name}', function ($name) {
 // Route::redirect('/home', '/');
 
 // Route::get('/about/{name}', function ($name) {
-//     echo $name; 
+//     echo $name;
 //     return view('about',["name"=>$name]);
 // });
 
@@ -74,7 +74,7 @@ Route::get('/about/{name}', function ($name) {
 
 // //dynamic
 // Route::get('/about/{name}', function ($name) {
-//     echo $name; 
+//     echo $name;
 //     return view('about');
 // });
 
@@ -84,6 +84,6 @@ Route::get('/about/{name}', function ($name) {
 // //whatever you are mentioning there Name ID, Username
 // //can use this key(=>) in a blade file
 // Route::get('/about/{name}', function ($name) {
-//     echo $name; 
+//     echo $name;
 //     return view('about',["name"=>$name]);
 // });
