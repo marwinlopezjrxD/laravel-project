@@ -1,20 +1,20 @@
 <?php
 
-use Illuminate\Support\Facades\Route;
+// use Illuminate\Support\Facades\Route;
 //import file on top to read the file
-use App\Http\Controllers\UserController;
+// use App\Http\Controllers\UserController;
 //if forgot too import
 // use App\Http\Controllers\UserController;
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+    // return view('welcome');
+// });
 
 //insert name of controller you are calling
 //1st parameter the path you want to show
 
 //2nd create an array that has two elements:
 //class name and method name
-Route::get('user',[UserController::class,'getUser']);
+// Route::get('user',[UserController::class,'getUser']);
 
 //call controller with routes
 // Route::get('about',[UserController::class,'aboutUser']);
@@ -23,7 +23,7 @@ Route::get('user',[UserController::class,'getUser']);
 //use curly braces to pass the parameter
 // /{name} will pass to the web.php first
 // from there, we are passing this to the controller
-Route::get('about/{name}',[UserController::class,'aboutUser']);
+// Route::get('about/{name}',[UserController::class,'aboutUser']);
 
 //call view with controller
 // on UserController.php and about.blade.php

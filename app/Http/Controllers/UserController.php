@@ -1,30 +1,21 @@
 <?php
-
+// View in Laravel
+// do not add comment tag before the <?php tag in the file
 namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
-
 use Illuminate\Http\Request;
 
 class UserController extends Controller
 {
-    //
-    function getUser(){
-        // return "This is mingu";
-        return view('user');
+    //call view using controller
+    function userHome(){
+        return view('home');
     }
-    //creating a same route(or class i think) with different method
-    //call controller with routes
-    function aboutUser($name){
-        // return "Hello, This is ".$name;
-
-        // call view with controller
-        return view('about',['name'=>$name]);
+    function userAbout(){
+        return view('about');
     }
     function adminLogin(){
-        // return "Hello, This is ".$name;
-
-        //call view which is under a nested folder
         return view('admin.login');
     }
 }
