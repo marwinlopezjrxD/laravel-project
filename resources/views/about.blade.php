@@ -4,6 +4,6 @@
 
 
 <div>
-    <h1>About Page</h1>
+    <h1>About {{$name}}</h1>
     <!-- Simplicity is the ultimate sophistication. - Leonardo da Vinci -->
 </div>
