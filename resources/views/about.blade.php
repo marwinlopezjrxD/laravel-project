@@ -1,3 +1,9 @@
-{{-- whatever name you want to pass --}}
-{{-- double curly braces is blade template things --}}
-<h1>hello this is {{$name}}</h1>
+{{-- create view files with the help of command lime --}}
+{{-- php artisan make:view about --}}
+
+
+
+<div>
+    <h1>About Page</h1>
+    <!-- Simplicity is the ultimate sophistication. - Leonardo da Vinci -->
+</div>
