@@ -1,5 +1,5 @@
 <?php
-// View in Laravel
+//Blade template in Laravel
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
 
