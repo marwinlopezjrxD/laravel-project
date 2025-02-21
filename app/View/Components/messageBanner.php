@@ -8,12 +8,14 @@ use Illuminate\Contracts\View\View;
 
 class messageBanner extends Component
 {
+    public $msg;
     /**
      * Create a new component instance.
      */
-    public function __construct()
+    public function __construct($msg)
     {
         //
+        $this->msg=$msg;
     }
 
     /**

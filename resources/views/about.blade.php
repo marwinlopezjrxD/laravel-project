@@ -1,4 +1,2 @@
-<h1>
-    About Page
-</h1>
-@include('common.inner', ['page' => 'This is about page'])
+<x-message-banner msg="user signup done" />
+<h1>About PAge</h1>
