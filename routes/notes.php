@@ -126,3 +126,9 @@
 // //how to pass dynamic data directly to the route file to the view
 
 // //check if view is existing or not
+
+// -----------------------------------------------------------
+// include view in Laravel
+
+// Route::get('user-home',[UserController::class,'userHome']);
+// Route::get('user-about',[UserController::class,'userAbout']);
