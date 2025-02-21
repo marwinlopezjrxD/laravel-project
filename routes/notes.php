@@ -132,3 +132,13 @@
 
 // Route::get('user-home',[UserController::class,'userHome']);
 // Route::get('user-about',[UserController::class,'userAbout']);
+
+// -----------------------------------------------------------
+// Input fields and form submit
+
+Route::view('user-form','user-form');
+//error, use Route::post instead
+// Route::get('addUser',[UserController::class,'addUser']);
+
+//419 page expire, not passing csrf token
+Route::post('addUser',[UserController::class,'addUser']);
