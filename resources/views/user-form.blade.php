@@ -1,39 +1,40 @@
 <div>
-    <h2>Add new user</h2>
-    <form action="addUser" method="post">
-        @csrf <!-- this is a must for every form -->
-        <div class="input-form">
-            <input type="text" placeholder="enter your name" name="username">
+    <h1>Add New User</h1>
+    <form action="adduser" method="post">
+        @csrf
+        {{-- checkbox type, choose one or multiple, or all --}}
+        <div>
+            <h4>User Skills</h4>
+            <input type="checkbox" name="skill[]" id="php" value="php">
+            <label for="php" >PHP</label>
+            <input type="checkbox" name="skill[]" id="java" value="Java">
+            <label for="java" >Java</label>
+            <input type="checkbox" name="skill[]" id="node" value="Node">
+            <label for="node" >Node</label>
         </div>
-        <div class="input-form">
-            <input type="text" placeholder="enter city" name="city">
+        {{-- Radio type, can only choose one--}}
+        <div>
+            <h4>User Gender</h4>
+            <input type="radio" name="gender" id="male" value="male">
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="female" value="female">
+            <label for="female">Female</label>
         </div>
-        <div class="input-form">
-            <input type="text" placeholder="enter email" name="email">
+        {{-- range --}}
+        <div>
+            <h4>User Age</h4>
+            <input type="range" name="age" id="age" max="100" min="18">
         </div>
-        <div class="input-form">
-            <button>Add new User</button>
-
+        {{-- dropdown --}}
+        <div>
+            <h4>User City</h4>
+            <select name="city">
+                <option value="manila">Manila</option>
+                <option value="makati">Makati</option>
+                <option value="quezon">Quezon</option>
+            </select>
         </div>
+        {{-- submit form button --}}
+        <button>Add New User</button>
     </form>
-    <!-- I have not failed. I've just found 10,000 ways that won't work. - Thomas Edison -->
 </div>
-
-<style>
-    input{
-        color: orange;
-        border: 1px solid orange;
-        height: 35px;
-        width: 200px;
-        border-radius: 2px;
-        margin: 10px;
-    }
-    button{
-        color: orange;
-        border: 1px solid orange;
-        height: 35px;
-        width: 200px;
-        border-radius: 2px;
-        margin: 10px;
-    }
-</style>
