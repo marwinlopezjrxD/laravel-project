@@ -144,6 +144,6 @@
 // Route::post('addUser',[UserController::class,'addUser']);
 
 // FOR FORMS TUTORIAL
-// Form Validation | input validation | email | max | min | required
+//
 // Route::view('user-form', 'user-form');
 // Route::post('adduser', [UserController::class, 'addUser']);
