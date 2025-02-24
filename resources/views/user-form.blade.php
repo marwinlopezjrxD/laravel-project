@@ -1,4 +1,4 @@
-{{-- Form Validation | input validation | email | max | min | required --}}
+{{-- Custom Validation Message | Advanced validation feature --}}
 
 <div>
     {{-- these errors shows all at the top, cannot be used for multiple fields(too messy) --}}
@@ -28,28 +28,22 @@
     <form action="adduser" method="post">
         @csrf
         <div class="input-wrapper">
-            <input type="text" placeholder="Enter User name" name="username">
-            {{-- inline style tag type of showing error --}}
+            <input type="text" placeholder="Enter User name" name="username" value="{{old('username')}}"
+            class="{{$errors->first('username')?'input-error':''}}" >
+            {{-- Get old value - value="{{old('name')}}"
+            ||   change input color if invalid - class="{{$errors->first('username')?'input-error':''}}" --}}
             <span style="color: red;">@error('username'){{$message}}@enderror</span>
         </div>
         <div class="input-wrapper">
-            <input type="text" placeholder="Enter User email" name="email">
+            <input type="text" placeholder="Enter User email" name="email" value="{{old('email')}}"
+            class="{{$errors->first('email')?'input-error':''}}" >
             <span style="color: red;">@error('email'){{$message}}@enderror</span>
         </div>
         <div class="input-wrapper">
-            <input type="text" placeholder="Enter User city" name="city">
+            <input type="text" placeholder="Enter User city" name="city" value="{{old('city')}}"
+            class="{{$errors->first('city')?'input-error':''}}" >
             <span style="color: red;">@error('city'){{$message}}@enderror</span>
         </div>
-        {{-- checkbox type, choose one or multiple, or all --}}
-        <div class="input-wrapper">
-            <h4>Skills</h4>
-            <input type="checkbox" name="skills[]" id="php" value="php">
-            <label for="php" >PHP</label>
-            <input type="checkbox" name="skills[]" id="java" value="Java">
-            <label for="java" >Java</label>
-            <input type="checkbox" name="skills[]" id="node" value="Node">
-            <label for="node" >Node</label>
-            <span style="color: red;">@error('skills'){{$message}}@enderror</span>
         <div class="input-wrapper">
         {{-- submit form button --}}
         <button>Add New User</button>
@@ -73,5 +67,9 @@
         width: 200px;
         border-radius: 2px;
         margin: 10px;
+    }
+    .input-error{
+        border: 1px solid red;
+        color: red;
     }
 </style>
