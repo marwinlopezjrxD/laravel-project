@@ -1,2 +1,4 @@
+{{-- Name Routes --}}
 <h1>Welcome Page</h1>
-<a href="/about">About Page</a>
+
+<a href="{{route('hm')}}">Go to Home</a>

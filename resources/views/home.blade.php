@@ -1,3 +1,3 @@
 <div>
-    <!-- Simplicity is an acquired taste. - Katharine Gerould -->
+    <h1>Home Page</h1>
 </div>

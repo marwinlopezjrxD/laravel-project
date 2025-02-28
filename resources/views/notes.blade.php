@@ -425,3 +425,56 @@
   {{-- Last URL ------>>  {{URL::previous()}} --}}
 {{-- </div> --}}
 
+{{-- URL Generation --}}
+{{-- welcome.blade.php --}}
+{{-- <h1>Welcome Page</h1>
+<a href="/about">About Page</a> --}}
+
+{{-- Name Routes --}}
+{{-- welcome.blade.php --}}
+{{-- <h1>Welcome Page</h1>
+
+<a href="{{route('hm')}}">Go to Home</a> --}}
+
+{{-- // Name Routes
+use Illuminate\Support\Facades\Route;
+// use App\Http\Controllers\UserController;
+// use this path to use the controller
+use App\Http\Controllers\HomeController;
+
+Route::get('/', function () {
+    return view('welcome');
+});
+
+// Route::view('hm', 'home');
+// Route::view('home/profile/user', 'home');
+
+// go to home page(to view home.blade.php, use this route)
+// use now of name routes(to avoid broken links, typo, can cause error, etc)
+Route::view('home/profile/user', 'home')->name('hm');
+
+// passing dynamic parameter to the route
+Route::view('home/username/{name}', 'home');
+
+// how to use the short name(exampleshortname) Route::view('home/username/{name}', 'home')->('exampleshortname');
+// and how to pass this {name} dynamic parameter
+                        // this key
+Route::view('home/username/{name}', 'home')->name('user');
+
+// How to use name route from controller
+Route::get('show', [HomeController::class, 'show']);
+// typing yourURL/show redirects to yourURL/home/profile/user
+
+// define the route name for passing of dynamic parameter {name}
+Route::get('user', [HomeController::class, 'user']);
+
+// example of name routes usage(too many routes, define a small name to a route instead of this)
+// Route::view('home/profile/user', 'home');
+
+// use of name routes example:
+// Route::view('home/profile/user', 'home')->name('hm');
+
+// how to use name routes with real examples:
+// make view and controller first
+// view: php artisan make:view home
+// view: php artisan make:controller HomeController --}}
