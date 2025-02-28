@@ -147,3 +147,14 @@
 //
 // Route::view('user-form', 'user-form');
 // Route::post('adduser', [UserController::class, 'addUser']);
+
+// URL Generation
+// Route::view('home', 'home');
+// Route::view('about', 'about');
+
+// // same view, different path(user)
+// // yourURL/user
+// // Route::view('user', 'home');
+
+// // make URL with child path
+// Route::view('about/{name}', 'about');

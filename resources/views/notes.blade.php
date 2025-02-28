@@ -334,7 +334,7 @@
 
 </div>
 
-<div>
+{{-- <div>
     <h1>Add New User</h1>
     <form action="adduser" method="post">
         @csrf
@@ -343,7 +343,7 @@
             class="{{$errors->first('username')?'input-error':''}}" >
             {{-- Get old value - value="{{old('name')}}"
             ||   change input color if invalid - class="{{$errors->first('username')?'input-error':''}}" --}}
-            <span style="color: red;">@error('username'){{$message}}@enderror</span>
+            {{-- <span style="color: red;">@error('username'){{$message}}@enderror</span>
         </div>
         <div class="input-wrapper">
             <input type="text" placeholder="Enter User email" name="email" value="{{old('email')}}"
@@ -357,12 +357,11 @@
         </div>
         <div class="input-wrapper">
         {{-- submit form button --}}
-        <button>Add New User</button>
+        {{-- <button>Add New User</button>
         </div>
     </form>
-</div>
-
-<style>
+</div> --}}
+{{-- <style>
     input{
         color: orange;
         border: 1px solid orange;
@@ -383,4 +382,37 @@
         border: 1px solid red;
         color: red;
     }
-</style>
+</style> --}}
+
+{{-- URL Generation
+{{-- home.blade.php --}}
+{{-- <div>
+    <h1>Home Page</h1>
+    {{-- get the current URL
+    <h3>{{URL::current()}}</h3>
+    {{-- yourURL/home --}}
+    {{-- get the full URL --}}
+    {{-- <h3>{{URL::full()}}</h3> --}}
+
+    {{-- url function --}}
+    {{-- <h3>{{url()->current()}}</h3> --}}
+    {{-- yourURL/home --}}
+    {{-- get the full URL --}}
+    {{-- <h3>{{url()->full()}}</h3> --}}
+
+    {{-- get the previous URL --}}
+    {{-- <a href="/about">About Page</a> --}}
+
+    {{-- make link URL --}}
+    {{-- <a href="{{URL::to('about')}}">About Page</a> --}}
+
+    {{-- make URL with child path --}}
+    {{-- <a href="{{URL::to('about',['ming'])}}">About Page(child URL)</a> --}}
+{{-- </div> --}}
+
+{{-- URL Generation --}}
+{{-- <div>
+    <h1>About Page</h1>
+    {{-- get the previous URL --}}
+  {{-- Last URL ------>>  {{URL::previous()}}
+</div> --}}

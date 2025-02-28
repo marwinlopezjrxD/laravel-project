@@ -1,33 +1,24 @@
-<x-message-banner msg="user added successfully" class="success"/>
-<x-message-banner msg="user logout successfully" class="success"/>
-<x-message-banner msg="no user found" class="error"/>
-<x-message-banner msg="some users are missing" class="warning"/>
+{{-- URL Generation --}}
+<div>
+    <h1>Home Page</h1>
+    {{-- get the current URL
+    <h3>{{URL::current()}}</h3>
+    {{-- yourURL/home --}}
+    {{-- get the full URL --}}
+    {{-- <h3>{{URL::full()}}</h3> --}}
 
-<h1>Home Page</h1>
+    {{-- url function --}}
+    <h3>{{url()->current()}}</h3>
+    {{-- yourURL/home --}}
+    {{-- get the full URL --}}
+    <h3>{{url()->full()}}</h3>
 
-<style>
-    .success{
-        background-color: lightgreen;
-        color: green;
-        padding: 3px 10px;
-        margin: 10px;
-        display: inline-block;
-        border-radius: 2px;
-    }
-    .error{
-        background-color: #ff000082;
-        color: red;
-        padding: 3px 10px;
-        margin: 10px;
-        display: inline-block;
-        border-radius: 2px;
-    }
-    .warning{
-        background-color: #ffa50094;
-        color: orange;
-        padding: 3px 10px;
-        margin: 10px;
-        display: inline-block;
-        border-radius: 2px;
-    }
-</style>
+    {{-- get the previous URL --}}
+    {{-- <a href="/about">About Page</a> --}}
+
+    {{-- make link URL --}}
+    <a href="{{URL::to('about')}}">About Page</a>
+
+    {{-- make URL with child path --}}
+    <a href="{{URL::to('about',['ming'])}}">About Page(child URL)</a>
+</div>
