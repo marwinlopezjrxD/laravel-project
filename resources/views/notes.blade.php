@@ -416,3 +416,12 @@
     {{-- get the previous URL --}}
   {{-- Last URL ------>>  {{URL::previous()}}
 </div> --}}
+
+{{-- URL Generation --}}
+{{-- about.blade.php --}}
+{{-- <div>
+    <h1>About Page</h1>
+    {{-- get the previous URL --}}
+  {{-- Last URL ------>>  {{URL::previous()}} --}}
+{{-- </div> --}}
+
