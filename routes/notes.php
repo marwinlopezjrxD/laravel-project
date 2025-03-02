@@ -158,3 +158,37 @@
 
 // // make URL with child path
 // Route::view('about/{name}', 'about');
+
+
+// Route Group with Prefix
+// use Illuminate\Support\Facades\Route;
+// use App\Http\Controllers\HomeController;
+
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+
+// //w/o prefix
+
+// // Route::view('home','home');
+// // Route::get('student/show',[HomeController::class,'show']);
+// // Route::get('student/add',[HomeController::class,'add']);
+
+
+// //prefix w/student keyword
+// //do this instead of using Route::view('student/etc','etc');
+// //                   or    Route::get
+// Route::prefix('student')->group(function(){
+//     Route::view('/home','home');
+//     Route::get('/show',[HomeController::class,'show']);
+//     Route::get('/add',[HomeController::class,'add']);
+// });
+
+// //different home for the diff country students with a diff route
+// //write this prefix
+// //instead of yourURL/student/philippines/home
+// Route::prefix('student/philippines')->group(function(){
+//     Route::view('/home','home');
+//     Route::get('/show',[HomeController::class,'show']);
+//     Route::get('/add',[HomeController::class,'add']);
+// });

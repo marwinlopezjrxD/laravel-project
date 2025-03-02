@@ -478,3 +478,12 @@ Route::get('user', [HomeController::class, 'user']);
 // make view and controller first
 // view: php artisan make:view home
 // view: php artisan make:controller HomeController --}}
+
+{{-- -------------------------------------------------------
+{{-- Route Group with Prefix --}}
+{{--
+<div>
+    <h1>Home View</h1>
+</div> --}}
+
+
