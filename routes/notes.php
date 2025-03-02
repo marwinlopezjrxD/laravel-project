@@ -192,3 +192,29 @@
 //     Route::get('/show',[HomeController::class,'show']);
 //     Route::get('/add',[HomeController::class,'add']);
 // });
+
+
+// -----------------------------------------------------------
+
+// Route Group with Controller
+// use Illuminate\Support\Facades\Route;
+// use App\Http\Controllers\StudentController;
+
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+
+
+// //instead of writing this
+// // Route::get('show',[StudentController::class,'show']);
+// // Route::get('add',[StudentController::class,'add']);
+// // Route::get('delete',[StudentController::class,'delete']);
+// // Route::get('about/{name}',[StudentController::class,'about']);
+
+// //use this route group with controller, for the same purpose and reduce redundancy
+// Route::controller(StudentController::class)->group(function(){
+//     Route::get('show','show');
+//     Route::get('add','add');
+//     Route::get('delete','delete');
+//     Route::get('about/{name}','about');
+// });
