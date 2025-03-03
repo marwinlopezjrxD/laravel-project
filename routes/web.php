@@ -1,5 +1,5 @@
 <?php
-// Connect to MySQL Database
+// Display database data on UI(DATABASE #27)
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
 

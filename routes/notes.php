@@ -272,3 +272,16 @@
 // // apply two or multiple middleware on the home route
 // Route::view('home', 'home')->middleware(AgeCheck::class,CountryCheck::class);
 // Route::view('about', 'about')->middleware(AgeCheck::class);
+
+
+// -----------------------------------------------------------
+
+// Display database data on UI(DATABASE #27)
+// use Illuminate\Support\Facades\Route;
+// use App\Http\Controllers\UserController;
+
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+
+// Route::get('users', [UserController::class, 'users']);
