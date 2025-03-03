@@ -19,7 +19,7 @@ return Application::configure(basePath: dirname(__DIR__))
         // registered all of the routes
         // 2. other syntax(global middleware)
            $middleware->use([
-               \App\Http\Middleware\AgeCheck::class
+            //    \App\Http\Middleware\AgeCheck::class
                // removing this, makes the middleware
                // or restrictions of the given AgeCheck middleware
                // to be removed
