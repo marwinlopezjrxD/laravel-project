@@ -1,11 +1,10 @@
 <?php
-//
+// Connect to MySQL Database
 use Illuminate\Support\Facades\Route;
-// use App\Http\Middleware\AgeCheck;
-// use App\Http\Middleware\CountryCheck;
+use App\Http\Controllers\UserController;
 
 Route::get('/', function () {
     return view('welcome');
 });
 
-
+Route::get('users', [UserController::class, 'users']);
