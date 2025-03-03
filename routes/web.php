@@ -1,10 +1,11 @@
 <?php
-// Display database data on UI(DATABASE #27)
+// #28 Eloquent Model
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\UserController;
+use App\Http\Controllers\StudentController;
 
 Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('users', [UserController::class, 'users']);
+// insert controller function to the route
+Route::get('students', [StudentController::class, 'getStudent']);
