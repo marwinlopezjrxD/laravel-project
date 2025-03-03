@@ -1,7 +1,5 @@
 <?php
-// command: php artisan make:middleware AgeCheck
-// What is Middleware in laravel
-// after creating middleware, you need to apply it in the bootstrap/app.php file
+//  Assigning Middleware to Routes
 namespace App\Http\Middleware;
 
 use Closure;
@@ -17,9 +15,10 @@ class AgeCheck
      */
     public function handle(Request $request, Closure $next): Response
     {
-        // echo "Age check";
+        //test
+        // echo "test";
         if($request->age<18){
-            die('You are under 18 and you can not access this website');
+            die('you are underaged');
         }
         return $next($request);
     }

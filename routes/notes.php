@@ -247,3 +247,28 @@
 // // Route::view('list', 'about');
 // // Route::view('contact', 'about');
 // // Route::view('user', 'about');
+
+// -----------------------------------------------------------
+
+// Assigning Middleware to Routes
+// use Illuminate\Support\Facades\Route;
+// use App\Http\Middleware\AgeCheck;
+// use App\Http\Middleware\CountryCheck;
+
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+
+// // apply middleware to routes
+// // php artisan make:view home
+// // php artisan make:view about
+// //
+
+
+// // home?age=18&country=usa - cannot access outside philippines
+// // home?age=17&country=philippines - you are underaged
+// // home?age=18&country=philippines - can access
+
+// // apply two or multiple middleware on the home route
+// Route::view('home', 'home')->middleware(AgeCheck::class,CountryCheck::class);
+// Route::view('about', 'about')->middleware(AgeCheck::class);
