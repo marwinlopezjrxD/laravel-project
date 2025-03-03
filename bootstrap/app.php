@@ -1,9 +1,9 @@
 <?php
-// What is Middleware in laravel
+// Middleware Group
 use Illuminate\Foundation\Application;
 use Illuminate\Foundation\Configuration\Exceptions;
 use Illuminate\Foundation\Configuration\Middleware;
-// 1.
+use App\Http\Middleware\CountryCheck;
 use App\Http\Middleware\AgeCheck;
 
 return Application::configure(basePath: dirname(__DIR__))
@@ -13,18 +13,13 @@ return Application::configure(basePath: dirname(__DIR__))
         health: '/up',
     )
     ->withMiddleware(function (Middleware $middleware) {
-        // two ways to apply middleware,
-        // 1. import it in route file, namespace path.
-        // $middleware->append(AgeCheck::class);
-        // registered all of the routes
-        // 2. other syntax(global middleware)
-           $middleware->use([
-            //    \App\Http\Middleware\AgeCheck::class
-               // removing this, makes the middleware
-               // or restrictions of the given AgeCheck middleware
-               // to be removed
-               // when now typing yourURL/?age=10
-           ]);
+        //
+        $middleware->appendToGroup('check1',[
+            CountryCheck::class,
+            AgeCheck::class
+        ]
+
+        );
     })
     ->withExceptions(function (Exceptions $exceptions) {
         //

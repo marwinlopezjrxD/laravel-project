@@ -15,6 +15,13 @@ class CountryCheck
      */
     public function handle(Request $request, Closure $next): Response
     {
+        //test if middleware works
+        // echo "Country Check";
+        if($request->country!='philippines'){
+            // url yourURL/home?age=20&country=philippines - valid
+            // url yourURL/home?age=20&country=usa - invalid
+            die('This website can not access outside to philippines');
+        }
         return $next($request);
     }
 }

@@ -221,4 +221,29 @@
 
 // -----------------------------------------------------------
 
+// Middleware Group
+// use Illuminate\Support\Facades\Route;
 
+
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+
+// Route::view('home', 'home')->middleware('check1');
+
+// // apply this middle ware to all of this routes
+// // yourURL/user?age=20&country=philippines
+// // yourURL/user?age=10&country=philippines - age not valid
+// // yourURL/user?age=20&country=usa - age is valid but country not valid
+// Route::middleware('check1')->group(function(){
+//     Route::view('about', 'about');
+//     Route::view('list', 'about');
+//     Route::view('contact', 'about');
+//     Route::view('user', 'about');
+// });
+
+
+// // Route::view('about', 'about');
+// // Route::view('list', 'about');
+// // Route::view('contact', 'about');
+// // Route::view('user', 'about');
