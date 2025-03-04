@@ -570,3 +570,26 @@ Route::get('user', [HomeController::class, 'user']);
 
     <!-- Because you are alive, everything is possible. - Thich Nhat Hanh -->
 </div> --}}
+
+
+{{-- #31 Database Query Builder --}}
+{{-- <div>
+    <h1>Users Data</h1>
+
+    <table border="1">
+        <tr>
+            <td>Name</td>
+            <td>Email</td>
+            <td>Phone</td>
+        </tr>
+        @foreach ($users as $user)
+        <tr>
+            <td>{{$user->name}}</td>
+            <td>{{$user->email}}</td>
+            <td>{{$user->phone}}</td>
+        </tr>
+        @endforeach
+    </table>
+
+    <!-- Knowing is not enough; we must apply. Being willing is not enough; we must do. - Leonardo da Vinci -->
+</div> --}}
