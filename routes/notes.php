@@ -321,3 +321,15 @@
 // });
 
 // Route::get('users',[UsersController::class,'queries']);
+
+// -----------------------------------------------------------
+
+// // #32 Eloquent Model Query Builder
+// use Illuminate\Support\Facades\Route;
+// use App\Http\Controllers\UserController;
+
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+
+// Route::get('user',[UserController::class,'queries']);

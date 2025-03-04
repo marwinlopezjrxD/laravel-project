@@ -1,21 +1,19 @@
-{{-- #30 Http Client --}}
+{{-- #32 Eloquent Model Query Builder --}}
 <div>
     <h1>User Data</h1>
-    {{-- passing of data on the Http Client(JSON) --}}
-    <ul>
-        <li>
-            <span>Name: </span><span><b>{{$data->name}}</b></span>
-        </li>
-        <li>
-            <span>Email: </span><span><b>{{$data->email}}</b></span>
-        </li>
-        <li>
-            <span>Phone: </span><span><b>{{$data->phone}}</b></span>
-        </li>
-        <li>
-            <span>Website: </span><span><b>{{$data->website}}</b></span>
-        </li>
-    </ul>
-
-    <!-- Because you are alive, everything is possible. - Thich Nhat Hanh -->
+    {{-- show data in a tabular format --}}
+    <table border="1">
+        <tr>
+            <td>Name</td>
+            <td>Email</td>
+            <td>Phone</td>
+        </tr>
+    @foreach ($users as $user)
+        <tr>
+            <td>{{$user->name}}</td>
+            <td>{{$user->email}}</td>
+            <td>{{$user->phone}}</td>
+        </tr>
+    @endforeach
+    </table>
 </div>
