@@ -298,3 +298,15 @@
 
 // // insert controller function to the route
 // Route::get('students', [StudentController::class, 'getStudent']);
+
+
+// -----------------------------------------------------------
+
+// #30 Http Client
+// use Illuminate\Support\Facades\Route;
+// use App\Http\Controllers\UserController;
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+//            //view   //controller
+// Route::get('user', [UserController::class, 'getUser']);
