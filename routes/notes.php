@@ -500,3 +500,80 @@
 // will echo out
 // POST( echo $request->method(); )
 // and login( echo $request->path(); )
+
+
+// -----------------------------------------------------------
+
+// #36 Session in laravel
+// use Illuminate\Support\Facades\Route;
+// use App\Http\Controllers\UserController;
+
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+
+// Route::view('login','login');
+
+
+// // make route for profile.blade.php
+// Route::view('profile','profile');
+
+
+// // for login.blade.php
+// // can be the same URL(login) but two diff request method
+// Route::post('login',[UserController::class,'login']);
+
+// // Session explained:
+// // 1. Sending a request to login.blade.php file
+// // 2. will go to login url
+// // 3. this login url will load the UserController page
+// // 4. this function(login) store the data in local storage and redirect it to the profile page(profile.blade.php)
+// // 5. and in profile page(profile.blade.php), there is a condition case if session is present for user, otherwise, it will show no session
+
+// // make logout url(get method)
+// // why get? because we are not calling any form....
+// // so this should be a get request only
+// Route::get('logout',[UserController::class,'login']);
+
+
+
+// -----------------------------------------------------------
+
+
+// -----------------------------------------------------------
+
+
+// -----------------------------------------------------------
+
+
+// -----------------------------------------------------------
+
+
+// -----------------------------------------------------------
+
+
+// -----------------------------------------------------------
+
+
+// -----------------------------------------------------------
+
+
+// -----------------------------------------------------------
+
+
+// -----------------------------------------------------------
+
+
+// -----------------------------------------------------------
+
+
+// -----------------------------------------------------------
+
+
+// -----------------------------------------------------------
+
+
+// -----------------------------------------------------------
+
+
+// -----------------------------------------------------------
