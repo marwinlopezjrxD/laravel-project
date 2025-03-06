@@ -416,3 +416,72 @@
 // whenever we are calling API that time, this optional request will automatically
 // send by the browser and it will check the page that we want to access if it is
 // available or not
+
+
+// -----------------------------------------------------------
+
+// #34 Laravel Route methods
+// use Illuminate\Support\Facades\Route;
+// use App\Http\Controllers\UserController;
+
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+// // Part 1
+
+// // Route::get('user',[UserController::class,'get']);
+
+
+// // // more examples of laravel route method
+// // // created form in user.blade.php
+// // // after submitting form using get method, user and pass is shown on the URL also(unsafe or insecure)
+// // Route::view('form','user');
+
+// // // define post method to make the form work
+// // // url('user') can be same or different
+// // // for now keep the URL same, because the method(get and post) are different
+// // Route::post('user',[UserController::class,'post']);
+
+// // put method
+// // Route::put('user',[UserController::class,'put']);
+
+// // // delete method
+// // Route::delete('user',[UserController::class,'delete']);
+
+// // Part 2
+
+// // use of any and match function
+// // use 1
+// // Route::get('user',[UserController::class,'any']);
+// // Route::post('user',[UserController::class,'any']);
+// // Route::put('user',[UserController::class,'any']);
+// // Route::delete('user',[UserController::class,'any']);
+
+// // define any route method
+// // Route::any('user',[UserController::class,'any']);
+
+// // define match route method
+// // how to call the ff:
+// // Group 1
+// // Route::get('user',[UserController::class,'any']);
+// // Route::post('user',[UserController::class,'any']);
+
+// // Group 2
+// //
+// // Route::put('user',[UserController::class,'any']);
+// // Route::delete('user',[UserController::class,'any']);
+
+// // use match route method
+// // 3 params
+// // which route method we will accept there
+
+// // for get and post
+// Route::match(['get','post'],'user',[UserController::class,'group1']);
+// // for put and delete
+// Route::match(['put','delete'],'user',[UserController::class,'group2']);
+
+// Route::view('form','user');
+
+// -----------------------------------------------------------
+
+

@@ -1,5 +1,5 @@
 <?php
-#33 Laravel Route methods
+#34 Laravel Route methods
 namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
@@ -23,5 +23,14 @@ class UserController extends Controller
     }
     function delete(){
         return "this is delete method";
+    }
+    function any(){
+        return "this is any function";
+    }
+    function group1(){
+        return "this is group 1 function";
+    }
+    function group2(){
+        return "this is group 2 function";
     }
 }

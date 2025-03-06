@@ -1,4 +1,5 @@
-{{-- #33 Laravel Route methods --}}
+{{-- #34 Laravel Route methods --}}
+{{-- Part 2 --}}
 <div>
     <h1>User Form</h1>
     {{-- two methods, get and post, can use other methods also --}}
@@ -20,10 +21,22 @@
 
          --}}
 
+         {{-- Part 2 --}}
+         {{--
+
+         The get method does also get the inputted fields of the user
+         using the any() laravel route methods
+
+         whenever the method is either get, post, put, or delete
+         it will show the route method of any
+         Route::any('user',[UserController::class,'any']);
+         on web.php(routes folder)
+
+         --}}
 
     {{-- get, post, put, and delete method on form --}}
     <form action="user" method="post">
-        <input type="hidden" name="_method" value="DELETE">
+        <input type="hidden" name="_method" value="PUT">
         <input type="text" name="user" placeholder="enter name">
         @csrf
         <br>
