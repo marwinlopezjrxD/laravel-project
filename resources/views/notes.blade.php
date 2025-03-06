@@ -670,7 +670,7 @@ Route::get('user', [HomeController::class, 'user']);
 {{-- user.blade.php --}}
 
 {{-- Part 2 --}}
-<div>
+{{-- <div>
     <h1>User Form</h1>
     {{-- two methods, get and post, can use other methods also --}}
     {{-- get - simple submitting of data but unsafe and insecure
@@ -705,7 +705,7 @@ Route::get('user', [HomeController::class, 'user']);
          --}}
 
     {{-- get, post, put, and delete method on form --}}
-    <form action="user" method="post">
+    {{-- <form action="user" method="post">
         <input type="hidden" name="_method" value="PUT">
         <input type="text" name="user" placeholder="enter name">
         @csrf
@@ -719,4 +719,66 @@ Route::get('user', [HomeController::class, 'user']);
     {{-- submitting this form will throw an error
     The POST method is not supported for route user. Supported methods: GET, HEAD.
     we also need to define the post also using Route::post on routes folder --}}
-</div>
+{{-- </div> --}}
+
+{{-- -------------------------------------------------------------- --}}
+
+{{-- #35 HTTP Request class --}}
+
+{{-- user.blade.php --}}
+
+{{-- <div>
+    <h1>User Login</h1>
+    <form action="user" method="post">
+    @csrf
+    <input type="text" name="name" placeholder="Enter user name">
+    <br>
+    <br>
+    <input type="password" name="password" placeholder="Enter user password">
+    <br>
+    <br>
+    <button>Login</button>
+
+    </form>
+</div> --}}
+
+{{-- -------------------------------------------------------------- --}}
+
+
+{{-- -------------------------------------------------------------- --}}
+
+
+{{-- -------------------------------------------------------------- --}}
+
+
+{{-- -------------------------------------------------------------- --}}
+
+
+{{-- -------------------------------------------------------------- --}}
+
+
+{{-- -------------------------------------------------------------- --}}
+
+
+{{-- -------------------------------------------------------------- --}}
+
+
+{{-- -------------------------------------------------------------- --}}
+
+
+{{-- -------------------------------------------------------------- --}}
+
+
+{{-- -------------------------------------------------------------- --}}
+
+
+{{-- -------------------------------------------------------------- --}}
+
+
+{{-- -------------------------------------------------------------- --}}
+
+
+{{-- -------------------------------------------------------------- --}}
+
+
+{{-- -------------------------------------------------------------- --}}

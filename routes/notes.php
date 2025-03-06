@@ -484,4 +484,19 @@
 
 // -----------------------------------------------------------
 
+// #35 HTTP Request class
+// use Illuminate\Support\Facades\Route;
+// use App\Http\Controllers\UserController;
 
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+
+// Route::view('form', 'user');
+
+// Route::post('user',[UserController::class,'login']);
+// double check if the login function on the UserController
+// Route::post('login',[UserController::class,'login']);
+// will echo out
+// POST( echo $request->method(); )
+// and login( echo $request->path(); )
