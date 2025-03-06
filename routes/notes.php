@@ -333,3 +333,86 @@
 // });
 
 // Route::get('user',[UserController::class,'queries']);
+
+
+// -----------------------------------------------------------
+
+// #33 Laravel Route methods
+// use Illuminate\Support\Facades\Route;
+// use App\Http\Controllers\UserController;
+
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+
+// Route::get('user',[UserController::class,'get']);
+
+
+// // more examples of laravel route method
+// // created form in user.blade.php
+// // after submitting form using get method, user and pass is shown on the URL also(unsafe or insecure)
+// Route::view('form','user');
+
+// // define post method to make the form work
+// // url('user') can be same or different
+// // for now keep the URL same, because the method(get and post) are different
+// Route::post('user',[UserController::class,'post']);
+
+// // put method
+// Route::put('user',[UserController::class,'put']);
+
+// // delete method
+// Route::delete('user',[UserController::class,'delete']);
+
+// 4 things in every route
+// Route class
+// Route Method ::get, ::view, etc
+// Route URL 'user', etc
+// Any thing to fetch or load on this URL UserController
+// User Method 'user'
+
+// Route::get('user',[UserController::class,'user']);
+
+// Laravel Route methods
+// $uri is simply the URL
+// $callback - which thing we want to load there
+// Route::get($uri, $callback);
+//        post
+//        put
+//        patch
+//        delete
+//        options
+//        view
+
+// get method - fetch or load any page on the browser
+// other methods accept the view and get the other routes
+// are not basically used with the browser directly
+// they are actually using the browser but for that,
+// we need some HTML form or something
+// cannot use directly like we are loading the page
+
+// if you want to directly load something into the browser
+// use the get method
+// inspect element,  network, refresh,
+// Request Method: GET
+
+// if you are using the FORM
+// can use other methods
+
+// post method if you want to store in db
+// or store cookies, or in local storage
+// using form, add some data to input fields, and send to controller
+// the controller will decide like what we have to do with this data
+// if the data will be stored in local storage, in cookies, or in session, or in db
+
+// put and patch method, both are basically used to update the data
+// when we want to update any specific data, use patch method
+// update the complete row**raw? data that we have, use put method
+
+// delete route method is used when we want to delete data from the db
+// or local storage or sessions
+
+// options route method, we dont use this
+// whenever we are calling API that time, this optional request will automatically
+// send by the browser and it will check the page that we want to access if it is
+// available or not
