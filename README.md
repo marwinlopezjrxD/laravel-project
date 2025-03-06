@@ -12,7 +12,7 @@
 
 ## Credits: https://www.youtube.com/@WebTechKnowledge
 
-## Simplicity is the essence of happiness. - Cedric Bledsoe
+## Very little is needed to make a happy life. - Marcus Aurelius
 
 woof woof......
 
