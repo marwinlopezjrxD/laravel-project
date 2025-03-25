@@ -1,5 +1,5 @@
 <?php
-// #37
+// #37 Flash Session in laravel
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
 
@@ -8,5 +8,6 @@ Route::get('/', function () {
 });
 
 
-
+Route::post('add', [UserController::class, 'addUser']);
+Route::view('user', 'user');
 
