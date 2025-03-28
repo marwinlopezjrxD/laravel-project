@@ -1,13 +1,13 @@
 <?php
-// #37 Flash Session in laravel
+// #38 Upload file | upload and display image
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\UserController;
+use App\Http\Controllers\UploadController;
 
 Route::get('/', function () {
     return view('welcome');
 });
 
 
-Route::post('add', [UserController::class, 'addUser']);
-Route::view('user', 'user');
+Route::view('upload','upload');
+Route::post('upload',[UploadController::class,'upload']);
 
